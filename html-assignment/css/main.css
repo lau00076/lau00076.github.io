@@ -1,0 +1,30 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+header h1, footer {
+    background-color: #DE3C4C;
+}
+.site-title {
+    color: #DE3C4C;
+}
+#my-image {
+    box-shadow: 0px 0px 2px 1px black; 
+}
+div ul{
+    list-style-type: square;
+}
+ul li:nth-child(odd) {
+    background-color: #DED952;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0.2em;
+    background-color: #911925;
+    border: 1px solid #DE3C4C;
+}
+nav a:hover {
+    background-color: #206C91;
+    border: 1px solid #26A0DE;
+}
