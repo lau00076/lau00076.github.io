@@ -9,9 +9,11 @@
     <title>Lone Starfish</title>
 </head>
 
+<!-- main contect divided into 3 parts -->
 <body>
+    <!-- header with nav bar -->
     <header>
-        <h2>Lone Starfish</h2>
+        <h1>Lone Starfish</h1>
         <img id="#home" src="images/lone-starfish-wide.jpg" alt="This is the background of the title.">
         <nav>
             <a href="#home">HOME</a>
@@ -19,8 +21,9 @@
             <a href="#contact">CONTACT</a>
         </nav>
     </header>
+    <!-- main content aka story -->
     <article id="story">
-        <h3>Life of a Starfish</h3>
+        <h2>Life of a Starfish</h2>
         <img src="images/lone-starfish.jpg" alt="This is the profile img of the story">
         <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa
             silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian
@@ -36,8 +39,9 @@
             flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray.
             Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish
             Australian lungfish searobin false trevally, dottyback.</p>
-        <div>
-            <h3>Facts About Starfish</h3>
+        <!-- facts -->
+            <div>
+            <h2>Facts About Starfish</h2>
             <ul>
                 <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                 <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
@@ -45,16 +49,17 @@
                 <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
             </ul>
         </div>
+        <!-- contact sheet -->
         <div>
-            <h3>Contact to Learn More</h3>
+            <h2>Contact to Learn More</h2>
             <fieldset>
-                <form>
-                    <label for="yourname">Your Name</label><br>
-                    <input type="text" id="yourname" name="name"><br>
-                    <label for="youremail">Your Email</label><br>
-                    <input type="text" id="youremail" name="email"><br>
-                    <label for="your message">Your Message</label><br>
-                    <input type="text" id="your message" name="message"><br>
+                <form action="#home" method="post">
+                    <label for="yourname">Your Name</label>
+                    <input type="text" id="yourname" name="name">
+                    <label for="youremail">Your Email</label>
+                    <input type="text" id="youremail" name="email">
+                    <label for="your message">Your Message</label>
+                    <textarea id="yourmessage" name="message"></textarea>
                     <p>Would you like to visit the Starfish?</p>
                     <label for="visityes">Yes</label>
                     <input type="radio" id="visityes" name="visit" value="Yes">
@@ -62,10 +67,14 @@
                     <input type="radio" id="visitno" name="visit" value="No">
                     <label for="visitmaybe">Maybe</label>
                     <input type="radio" id="visitmaybe" name="visit" value="Maybe">
-                    <input type="submit" id="Send">
+                    <input type="submit" value="Send">
                 </form>
             </fieldset>
         </div>
+        <!-- footer -->
+        <footer>
+            <p><sub>&copy; Lone Starfish.</sub></p>
+        </footer>
     </article>
 </body>
 

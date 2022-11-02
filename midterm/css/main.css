@@ -1,0 +1,86 @@
+/* basic font setting */
+html {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: #aad4cf;
+    padding: 0% 15% 1% 15%;
+}
+
+h1 {
+    display: inline-block;
+    position: absolute;
+    margin-left: -15%;
+    top: 12rem;
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+}
+
+/* centered nav bar */
+nav {
+    display: block;
+    margin: auto;
+    background-color: #d4e9e6;
+    width: 100%;
+    margin: -5px 0px 0px 0px;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+a[href*="story"] {
+    display: inline-block;
+    color: black;
+    padding: 10px 80px 10px 80px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+article {
+    background-color: #d4e9e6;
+    padding: 10px;
+}
+
+/* wrapped img */
+article img {
+    width: 150px;
+    float: left;
+    padding: 0 10px 5px 0;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0 5px 0;
+}
+
+input[type=text] {
+    width: 98%;
+}
+
+textarea {
+    width: 98%;
+}
+
+input[type=submit] {
+    display: block;
+    margin-top: 15px;
+}
+
+/* footer on the right side */
+footer {
+    text-align: right;
+}
