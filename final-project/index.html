@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <!-- The header separate into nav and main banner parts. -->
        <div class="navigation">
             <img src="images/logo.png" alt="logo">
             <nav>
@@ -43,6 +44,7 @@
             </div>
         </div>
         <div class="services" id="services">
+            <!-- Services are deivided into 5 parts as sections. -->
             <h2>Our Services</h2>
             <section class="digital-transformation">
                 <img src="images/digital.jpg" alt="digital-pic">
@@ -76,6 +78,7 @@
             </section>            
         </div>
         <div class="vision">
+            <!-- Vision should be a indenpendent block. -->
             <img src="images/vision.jpg" alt="vision pic behind">
             <div class="vision-text">
                 <h4>Our Vision</h4>
@@ -103,16 +106,17 @@
             </div>
         </div>
         <div class="contact" id="contact">
+            <!-- Contact should be divided into form, location, and hours of operation -->
             <h2>Contact Us</h2>
             <div class="message">
                 <h4>Send us a message</h4>
                 <form action="#" method="post">                    
                     <label for="fullname">Full Name</label><br>
-                    <input type="text" name="fullname"><br>
+                    <input id="fullname" type="text" name="fullname"><br>
                     <label for="email">Email</label><br>
-                    <input type="text" name email><br>
+                    <input id="email" type="text" name="email"><br>
                     <label for="message">Message</label><br>
-                    <textarea type="text" name="message"></textarea>                    
+                    <textarea id="message" name="message"></textarea>                    
                 </form>
                 <button class="sendmsg">Send</button>
             </div>
