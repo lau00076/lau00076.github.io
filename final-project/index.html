@@ -4,80 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS reset-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- icon stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="css/main.css">
     <title>HTML Page Mock-up</title>
 </head>
 <body>
     <header>
         <!-- The header separate into nav and main banner parts. -->
-       <div class="navigation">
-            <img src="images/logo.png" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <form class="searchbox" action="#" method="get">
-                <input type="text" name="search" placeholder="Search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+       <div class="header">
+            <div id="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <nav class="navigator">
+                <ul>                    
+                    <li id="nav-home"><a href="#home">Home</a></li>
+                    <li id="nav-about"><a href="#about-us">About Us</a></li>
+                    <li id="nav-services"><a href="#services">Services</a></li>
+                    <li id="nav-team"><a href="#team">Team</a></li>
+                    <li ic="nav-contact"><a href="#contact">Contact</a></li>
+                </ul>                
+            </nav>   
+            <form class="search" action="#" method="get">
+                <input id="searchbox" type="text" name="search" placeholder="Search">
+                <button type="submit" id="searchbox-button"><i class="fa fa-search"></i></button>
+            </form>         
         </div>
         <div class="home" id="home">
-            <img src="images/main-banner.jpg" alt="main-banner behind">
+            <!-- <img src="images/main-banner.jpg" alt="main-banner behind"> -->
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae? Laborum alias at fugiat provident ab eligendi natus, velit, vel earum, veniam voluptates deserunt! Architecto officiis quas minima obcaecati minus!</p>
-            <button>Connect with us <i class="fa fa-caret-right"></i></button>
+            <button><a href="#contact"></a>Connect with us <i class="fa fa-caret-right"></i></button>
         </div>
     </header>
     <main>
-        <div class="about-us" id="about-us">
+        <section class="about-us" id="about-us">
             <img src="images/about-us.jpg" alt="about-us">
             <div class="about-us-text">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil alias id beatae? Harum illo necessitatibus culpa laudantium quibusdam nemo molestiae fugiat, nulla id nostrum officia voluptate modi tempora omnis laboriosam.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos corporis voluptas, quidem facere cumque aperiam corrupti quae, harum molestiae placeat vel quo hic necessitatibus rem explicabo tempore ipsa? Perspiciatis, eveniet?</p>
             </div>
-        </div>
-        <div class="services" id="services">
+        </section>
+        <section class="services" id="services">
             <!-- Services are deivided into 5 parts as sections. -->
             <h2>Our Services</h2>
-            <section class="digital-transformation">
+            <div class="digital-transformation">
                 <img src="images/digital.jpg" alt="digital-pic">
                 <h4>Digital Transformation</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus vel ipsa harum quisquam iure, temporibus voluptatem adipisci? Nulla molestiae, omnis corrupti illo dolores doloribus reprehenderit enim, error, quam ratione sequi?</p>
                 <button>Digital Plans <i class="fa fa-caret-right"></i></button>
-            </section>
-            <section class="marketing">
+            </div>
+            <div class="marketing">
                 <img src="images/marketing.jpg" alt="marketing-pic">
                 <h4>Marketing</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus vel ipsa harum quisquam iure, temporibus voluptatem adipisci? Nulla molestiae, omnis corrupti illo dolores doloribus reprehenderit enim, error, quam ratione sequi?</p>
                 <button>Marketing Plans <i class="fa fa-caret-right"></i></button>
-            </section>
-            <section class="video-production">
+            </div>
+            <div class="video-production">
                 <img src="images/video.jpg" alt="video-pic">
                 <h4>Video Production</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus vel ipsa harum quisquam iure, temporibus voluptatem adipisci? Nulla molestiae, omnis corrupti illo dolores doloribus reprehenderit enim, error, quam ratione sequi?</p>
                 <button>Video Plans <i class="fa fa-caret-right"></i></button>
-            </section>
-            <section class="web-dev">
+            </div>
+            <div class="web-dev">
                 <img src="images/web.jpg" alt="web-dev-pic">
                 <h4>Web Development</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus vel ipsa harum quisquam iure, temporibus voluptatem adipisci? Nulla molestiae, omnis corrupti illo dolores doloribus reprehenderit enim, error, quam ratione sequi?</p>
                 <button>Web Plans <i class="fa fa-caret-right"></i></button>
-            </section>
-            <section class="print">
+            </div>
+            <div class="print">
                 <img src="images/print.jpg" alt="print-img">
                 <h4>Print</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus vel ipsa harum quisquam iure, temporibus voluptatem adipisci? Nulla molestiae, omnis corrupti illo dolores doloribus reprehenderit enim, error, quam ratione sequi?</p>
                 <button>Print Plans <i class="fa fa-caret-right"></i></button>
-            </section>            
-        </div>
-        <div class="vision">
+            </div>            
+        </section>
+        <section class="vision">
             <!-- Vision should be a indenpendent block. -->
             <img src="images/vision.jpg" alt="vision pic behind">
             <div class="vision-text">
@@ -85,8 +95,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, reprehenderit necessitatibus nemo, quasi earum nulla libero optio a dolorum fuga facere sunt porro totam provident accusantium, sequi quia! Veritatis, maiores.</p>
                 <button>Learn More <i class="fa fa-caret-right"></i></button>
             </div>
-        </div>
-        <div class="team" id="team">
+        </section>
+        <section class="team" id="team">
             <h2>Our Team</h2>
             <div class="john-doe">
                 <img src="images/john.jpg" alt="john-pic">
@@ -104,8 +114,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestias alias odit hic, doloribus accusamus inventore non amet voluptatem culpa architecto, dolores, obcaecati unde ex! Quam odio quo a aliquid.</p>
                 </section>
             </div>
-        </div>
-        <div class="contact" id="contact">
+        </section>
+        <section class="contact" id="contact">
             <!-- Contact should be divided into form, location, and hours of operation -->
             <h2>Contact Us</h2>
             <div class="message">
@@ -145,7 +155,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <p>&copy; Cpoyright Three Star Media, 2020</p>
