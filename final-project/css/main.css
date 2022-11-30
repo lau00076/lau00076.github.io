@@ -3,6 +3,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.wrapper {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
 iframe {
     max-width: 500px;
 }
@@ -31,6 +37,7 @@ a:visited {
 li:hover {
     color: black;
     background-color: #c78c06;
+    /* padding: 10px; */
 }
 
 #logo {
@@ -39,13 +46,13 @@ li:hover {
     margin: 0 10px;
 }
 
-#nav-home {
+/* #nav-home {
     background-color: #c78c06;
     color: black;
     padding: 10px 0 10px 0;
     margin: 10px;
     margin-top: 0;
-}
+} */
 
 .search {
     display: block;
