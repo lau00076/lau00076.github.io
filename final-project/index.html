@@ -20,28 +20,29 @@
     <header>
         <!-- The header separate into nav and main banner parts. -->
        <div class="header">
-            <div id="logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
             <nav class="navigator">
-                <ul>                    
+                <ul>                    <div id="logo">
+                    <img src="images/logo.png" alt="logo">
+                    </div>
                     <li id="nav-home"><a href="#home">Home</a></li>
                     <li id="nav-about"><a href="#about-us">About Us</a></li>
                     <li id="nav-services"><a href="#services">Services</a></li>
                     <li id="nav-team"><a href="#team">Team</a></li>
                     <li ic="nav-contact"><a href="#contact">Contact</a></li>
+                    <form class="search" action="#" method="get">
+                        <input id="searchbox" type="text" name="search" placeholder="Search">
+                        <button type="submit" id="searchbox-button"><i class="fa fa-search"></i></button>
+                    </form> 
                 </ul>                
-            </nav>   
-            <form class="search" action="#" method="get">
-                <input id="searchbox" type="text" name="search" placeholder="Search">
-                <button type="submit" id="searchbox-button"><i class="fa fa-search"></i></button>
-            </form>         
+            </nav> 
         </div>
         <div class="home" id="home">
             <img src="images/main-banner.jpg" alt="main-banner behind">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae? Laborum alias at fugiat provident ab eligendi natus, velit, vel earum, veniam voluptates deserunt! Architecto officiis quas minima obcaecati minus!</p>
-            <button><a href="#contact"></a>Connect with us <i class="fa fa-caret-right"></i></button>
+            <section class="home-text">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae? Laborum alias at fugiat provident ab eligendi natus, velit, vel earum, veniam voluptates deserunt! Architecto officiis quas minima obcaecati minus!</p>
+                <button><a href="#contact"></a>Connect with us <i class="fa fa-caret-right"></i></button>
+            </section>
         </div>
     </header>
     <main>
@@ -54,7 +55,7 @@
             </div>
         </section>
         <section class="services" id="services">
-            <!-- Services are deivided into 5 parts as sections. -->
+            <!-- Services are deivided into 5 parts as dividends. -->
             <h2>Our Services</h2>
             <div class="digital-transformation">
                 <img src="images/digital.jpg" alt="digital-pic">
@@ -88,7 +89,7 @@
             </div>            
         </section>
         <section class="vision">
-            <!-- Vision should be a indenpendent block. -->
+            <!-- Vision should be an indenpendent block. -->
             <img src="images/vision.jpg" alt="vision pic behind">
             <div class="vision-text">
                 <h4>Our Vision</h4>

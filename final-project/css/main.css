@@ -6,11 +6,7 @@ body {
 .wrapper {
     display: block;
     max-width: 1200px;
-    margin: auto;
-}
-
-iframe {
-    max-width: 500px;
+    margin: 0 auto;
 }
 
 .header {
@@ -23,11 +19,12 @@ ul {
     display: block;
     text-align: center;
     color: #c78c06;
+    margin: 0 10px;
 }
 
 li {
     display: block;
-    margin: 20px;
+    padding: 40px;
 }
 
 a:visited {
@@ -42,46 +39,86 @@ li:hover {
 
 #logo {
     display: block;
+    text-align: left;
     background-color: #c78c06;
-    margin: 0 10px;
 }
-
-/* #nav-home {
-    background-color: #c78c06;
-    color: black;
-    padding: 10px 0 10px 0;
-    margin: 10px;
-    margin-top: 0;
-} */
 
 .search {
     display: block;
     text-align: center;
 }
 
+/* adjust the size of searchbox and text inside */
 #searchbox {
-    width: 90%;
+    display: inline-block;
+    border: none;
+    height: 40px;
+    vertical-align: middle;
+    width: calc(100% - 42px - 10px);
+    font-size: 1em;
+    padding: 0 0 0 10px;
 }
 
+/* adjust the size of search button */
 #searchbox-button {
+    display: inline-block;
     color: #c78c06;
     background-color: transparent;
     border: 1px solid #c78c06;
-    height: 22px;
-    width: 22px;
-    margin: 0 0 0 -2px;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 0 0 0 -4px;
 }
 
 #searchbox-button:visited {
     color: inherit;
 }
 
-/* .home {
-    background-image: url("../images/main-banner.jpg");
-    background-color: white;
-    background-position: center;
-    height: 500px;
+.home {
+    position: relative;
+    /* background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-} */
+    width: 100%;
+    height: calc(auto + 10px);
+    background-position: center;
+    text-align: left; */
+}
+
+.home img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home .home-text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: rgba(34, 34, 34, 0.7);
+    color: white;
+    padding: 30px 0 10px 10px;
+    width: calc(100%-10px);
+}
+
+.home-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+.home-text p {
+    font-size: 0.6em;
+    line-height: 1.6em;
+    margin: 10px 30px 0 0;
+}
+
+.home button {
+    background-color: #c78c06;
+    margin-top: 8px;
+    padding: 26px;
+}
+
