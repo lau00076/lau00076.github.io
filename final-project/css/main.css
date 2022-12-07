@@ -271,7 +271,7 @@ li:hover {
     padding-bottom: 26px;
 }
 
-.contact label {
+.contact .message label {
     display: block;
     font-size: 0.6em;
     padding-top: 10px;
@@ -279,23 +279,62 @@ li:hover {
 }
 
 /* resize the contact form to fit the screen in moblie wiew */
-.contact input {
+.contact .message input {
     display: block;
     width: calc(100% - 10px);
     font-size: 1em;
 }
 
-.contact textarea {
+.contact .message textarea {
     display: block;
     resize: none;
     width: calc(100% - 10px);
     height: 7.5em;
 }
 
-.contact button {
+.contact .message button {
     margin-top: 12px;
     background-color: #222;
     color: #c78c06;
     padding: 4px;
     font: 0.5em;
+}
+
+.contact .operation h4 {
+    padding-top: 20px;
+    padding-bottom: 10px;;
+}
+
+.contact .operation table, th, td {
+    border: 0.8px solid black;
+    padding: 12px;
+    font-size: 0.8em;
+}
+
+.contact .operation table {
+    width: 100%;
+}
+
+.contact .operation th {
+    background-color: #ffe6ac;
+}
+
+.contact .location h4 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contact .location iframe {
+    display: block;
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding:10px;
+}
+
+footer p {
+    margin-top: 10px;
 }
