@@ -54,7 +54,6 @@ a:visited {
 li:hover {
     color: black;
     background-color: #c78c06;
-    /* padding: 10px; */
 }
 
 #logo {
@@ -106,7 +105,7 @@ li:hover {
 }
 
 /* use absolute position and transform: translate to centre the text overlapping the background image */
-.home .home-text {
+.home-text {
     display: block;
     position: absolute;
     top: 50%;
@@ -261,4 +260,42 @@ li:hover {
 
 .team p {
     padding: 10px 0;
+}
+
+.contact {
+    margin: 10px;
+}
+
+.contact h2 {
+    padding-top: 40px;
+    padding-bottom: 26px;
+}
+
+.contact label {
+    display: block;
+    font-size: 0.6em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* resize the contact form to fit the screen in moblie wiew */
+.contact input {
+    display: block;
+    width: calc(100% - 10px);
+    font-size: 1em;
+}
+
+.contact textarea {
+    display: block;
+    resize: none;
+    width: calc(100% - 10px);
+    height: 7.5em;
+}
+
+.contact button {
+    margin-top: 12px;
+    background-color: #222;
+    color: #c78c06;
+    padding: 4px;
+    font: 0.5em;
 }
