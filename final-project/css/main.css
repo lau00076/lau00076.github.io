@@ -77,13 +77,6 @@ li:hover {
 
 .home {
     position: relative;
-    /* background-image: url(../images/main-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: calc(auto + 10px);
-    background-position: center;
-    text-align: left; */
 }
 
 .home img {
@@ -92,6 +85,7 @@ li:hover {
     height: auto;
 }
 
+/* use absolute position and transform: translate to centre the text overlapping the background image */
 .home .home-text {
     display: block;
     position: absolute;
@@ -122,3 +116,30 @@ li:hover {
     padding: 26px;
 }
 
+/* Section about-us is independent; margina only set for img and text. */
+.about-us {
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.about-us img {
+    display: block;
+    width: 100%;
+}
+
+.about-us-text h2 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 26px;
+    padding-bottom: 20px;
+}
+
+.about-us-text p {
+    font-size: 0.6em;
+    line-height: 1.6em;
+    padding-bottom: 10px;
+}
+
+.class {
+
+}
