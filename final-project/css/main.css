@@ -51,6 +51,11 @@ ul {
     margin: 0 10px;
 }
 
+.logobox {
+    background-color: #c78c06;
+    width: 100%;
+}
+
 #logo {
     display: block;
     text-align: left;
@@ -208,7 +213,7 @@ li:hover {
 /* set background img in CSS instead of html to ensure the img fit the text */
 .vision {
     margin-top: 20px;
-    width: calc(100% - 56px);
+    width: calc(100% - 20px);
     background-image: url(../images/vision.jpg);
     background-position: center;
     background-size: cover;
@@ -338,6 +343,7 @@ li:hover {
 .contact .location iframe {
     display: block;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -372,6 +378,11 @@ footer p {
     ul {
         display: flex;
         align-items: center;
+    }
+    
+    .logobox {
+        background-color: transparent;
+        width: fit-content;
     }
     
     #logo {
@@ -478,13 +489,8 @@ footer p {
         grid-area: pr;
     }
 
-    .vision {
-        width: 100%;
-        padding: 0;
-    }
-
     .vision-text {
-        padding: 0 60px;
+        padding: 30px 60px;
     }
 
     .team h2 {
