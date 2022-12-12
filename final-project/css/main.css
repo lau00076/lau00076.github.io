@@ -29,6 +29,11 @@ p {
     line-height: 1.6em;
 }
 
+a {
+    text-decoration: none;
+    color: #c78c06;
+}
+
 a:visited {
     color: inherit;
 }
