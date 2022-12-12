@@ -29,6 +29,10 @@ p {
     line-height: 1.6em;
 }
 
+a:visited {
+    color: inherit;
+}
+
 .header {
     display: block;
     background-color: #222;
@@ -50,10 +54,6 @@ ul {
 li {
     display: block;
     padding: 20px;
-}
-
-a:visited {
-    color: inherit;
 }
 
 li:hover {
@@ -349,7 +349,7 @@ footer p {
 @media screen and (min-width: 760px) {
     /* default setting in destop view */
     h1 {
-        font-size: 4em;
+        font-size: 5em;
         font-weight: bold;
     }
     
@@ -477,9 +477,15 @@ footer p {
         padding: 0 60px;
     }
 
+    .team h2 {
+        padding-left: 60px;
+    }
+
     /* use flex to reorder the content */
     .team-div {
         display: flex;
+        width: calc(100% - 140px);
+        margin: 0 auto;
     }
 
    .team-img {
@@ -490,5 +496,41 @@ footer p {
         flex-direction: row-reverse;
     }
 
+    .contact {
+        display: grid;
+        padding: 20px 60px;
+        width: calc(100% - 120px);
+        grid-column: repeat(2, 1fr);
+        grid-template-areas:
+        'cu cu'
+        'msg loc'
+        'ope ope';
+    }
 
+    /* use grid to position and reorder div contact */
+    .contact h2 {
+        grid-area: cu;
+    }
+    
+    .message {
+        grid-area: msg;
+        width: 98%;
+    }
+
+    .operation {
+        grid-area: ope;
+    }
+
+    .location {
+        grid-area: loc;
+    }
+
+    /* style the footer */
+    footer {
+        padding-left: 60px;
+    }
+
+    footer a {
+        text-decoration: underline;
+    }
 }
