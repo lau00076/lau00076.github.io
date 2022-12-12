@@ -478,6 +478,11 @@ footer p {
         grid-area: pr;
     }
 
+    .vision {
+        width: 100%;
+        padding: 0;
+    }
+
     .vision-text {
         padding: 0 60px;
     }
